@@ -1,0 +1,14 @@
+// *.vcxproj
+// *.vcxproj.filters
+// *.vcxproj.user
+
+*.log
+*.tlog
+*.obj
+*.idb
+*.pdb
+*.ilk
+
+**/x64/Debug
+**/Debug
+**/Fanorona/x64

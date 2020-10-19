@@ -1,0 +1,317 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  
+%   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 
+42.86      0.12     0.12                             __gnu_cxx::new_allocator<std::_List_node<std::list<int, std::allocator<int> >*> >::allocate(unsigned long, void const*)
+ 
+35.71      0.22     0.10                             __gnu_cxx::new_allocator<std::_List_node<std::list<int, std::allocator<int> >*> >::new_allocator()
+  
+7.14      0.24     0.02   265569     0.00     0.00  CanBeCaptured(Stone, Board)
+  
+7.14      0.26     0.02       32     0.62     0.82  CanMakeCapturingChainMove(Stone, Board&, std::list<Point, std::allocator<Point> >&, std::list<int, std::allocator<int> >&, int)
+  
+7.14      0.28     0.02                             __gnu_cxx::new_allocator<std::_List_node<std::list<int, std::allocator<int> >*> >::deallocate(std::_List_node<std::list<int, std::allocator<int> >*>*, unsigned long)
+  
+0.00      0.28     0.00   230486     0.00     0.00  std::allocator_traits<std::allocator<std::_List_node<Point> > >::deallocate(std::allocator<std::_List_node<Point> >&, std::_List_node<Point>*, unsigned long)
+  
+0.00      0.28     0.00   216695     0.00     0.00  void std::allocator_traits<std::allocator<std::_List_node<Point> > >::destroy<Point>(std::allocator<std::_List_node<Point> >&, Point*)
+  
+0.00      0.28     0.00   171512     0.00     0.00  std::_List_base<Stone, std::allocator<Stone> >::~_List_base()
+  
+0.00      0.28     0.00   160257     0.00     0.00  std::_List_node<Stone>* std::list<Stone, std::allocator<Stone> >::_M_create_node<Stone const&>(Stone const&)
+  
+0.00      0.28     0.00   131896     0.00     0.00  std::_List_iterator<std::list<Point, std::allocator<Point> >*>::operator++(int)
+  
+0.00      0.28     0.00   131896     0.00     0.00  std::back_insert_iterator<std::list<int, std::allocator<int> > > std::__niter_wrap<std::back_insert_iterator<std::list<int, std::allocator<int> > > >(std::back_insert_iterator<std::list<int, std::allocator<int> > > const&, std::back_insert_iterator<std::list<int, std::allocator<int> > >)
+  
+0.00      0.28     0.00    98842     0.00     0.00  std::iterator_traits<std::_List_const_iterator<std::list<Point, std::allocator<Point> >*> >::difference_type std::distance<std::_List_const_iterator<std::list<Point, std::allocator<Point> >*> >(std::_List_const_iterator<std::list<Point, std::allocator<Point> >*>, std::_List_const_iterator<std::list<Point, std::allocator<Point> >*>)
+  
+0.00      0.28     0.00    95780     0.00     0.00  void std::list<Point, std::allocator<Point> >::_M_insert<Point const&>(std::_List_iterator<Point>, Point const&)
+  
+0.00      0.28     0.00    92752     0.00     0.00  std::_List_node<Stone>::_M_valptr()
+  
+0.00      0.28     0.00    84911     0.00     0.00  std::_List_iterator<int>::operator++()
+  
+0.00      0.28     0.00    84911     0.00     0.00  std::__allocated_ptr<std::allocator<std::_List_node<Point> > >::__allocated_ptr(std::allocator<std::_List_node<Point> >&, std::_List_node<Point>*)
+  
+0.00      0.28     0.00    84911     0.00     0.00  std::__allocated_ptr<std::allocator<std::_List_node<std::list<Point, std::allocator<Point> >*> > >::operator=(decltype(nullptr))
+  
+0.00      0.28     0.00    84911     0.00     0.00  std::__allocated_ptr<std::allocator<std::_List_node<std::list<int, std::allocator<int> >*> > >::__allocated_ptr(std::allocator<std::_List_node<std::list<int, std::allocator<int> >*> >&, std::_List_node<std::list<int, std::allocator<int> >*>*)
+  
+0.00      0.28     0.00    78441     0.00     0.00  std::back_insert_iterator<std::list<Point, std::allocator<Point> > > std::__copy_move<false, false, std::bidirectional_iterator_tag>::__copy_m<std::_List_iterator<Point>, std::back_insert_iterator<std::list<Point, std::allocator<Point> > > >(std::_List_iterator<Point>, std::_List_iterator<Point>, std::back_insert_iterator<std::list<Point, std::allocator<Point> > >)
+  
+0.00      0.28     0.00    77031     0.00     0.00  Point&& std::forward<Point>(std::remove_reference<Point>::type&)
+  
+0.00      0.28     0.00    65948     0.00     0.00  std::_List_iterator<Stone>::operator++(int)
+  
+0.00      0.28     0.00    65948     0.00     0.00  std::_List_iterator<std::list<Point,std::allocator<Point> >*>::_List_iterator(std::__detail::_List_node_base*)
+  
+0.00      0.28     0.00    65728     0.00     0.00  std::_List_base<Stone, std::allocator<Stone> >::_M_put_node(std::_List_node<Stone>*)
+  
+0.00      0.28     0.00    65728     0.00     0.00  std::__allocated_ptr<std::allocator<std::_List_node<int> > >::__allocated_ptr(std::allocator<std::_List_node<int> >&, std::_List_node<int>*)
+  
+0.00      0.28     0.00    65728     0.00     0.00  std::_List_node<int>* std::list<int, std::allocator<int> >::_M_create_node<int const&>(int const&)
+  
+0.00      0.28     0.00    57800     0.00     0.00  InitializeBoard(Board&)
+  
+0.00      0.28     0.00    57353     0.00     0.00  IsOnStrongPosition(Stone)
+  
+0.00      0.28     0.00    53622     0.00     0.00  std::_List_base<int, std::allocator<int> >::_M_clear()
+  
+0.00      0.28     0.00    50156     0.00     0.00  std::iterator_traits<std::_List_const_iterator<Point> >::difference_type std::distance<std::_List_const_iterator<Point> >(std::_List_const_iterator<Point>, std::_List_const_iterator<Point>)
+  
+0.00      0.28     0.00    47718     0.00     0.00  std::list<Point, std::allocator<Point> >::push_back(Point const&)
+  
+0.00      0.28     0.00    41814     0.00     0.00  std::back_insert_iterator<std::list<Point, std::allocator<Point> > > std::__copy_move_a2<false, std::_List_iterator<Point>, std::back_insert_iterator<std::list<Point, std::allocator<Point> > > >(std::_List_iterator<Point>, std::_List_iterator<Point>, std::back_insert_iterator<std::list<Point, std::allocator<Point> > >)
+  
+0.00      0.28     0.00    41814     0.00     0.00  std::back_insert_iterator<std::list<int, std::allocator<int> > > std::__copy_move_a2<false, std::_List_iterator<int>, std::back_insert_iterator<std::list<int, std::allocator<int> > > >(std::_List_iterator<int>, std::_List_iterator<int>, std::back_insert_iterator<std::list<int, std::allocator<int> > >)
+  
+0.00      0.28     0.00    37926     0.00     0.00  std::_List_node<Point>::_M_valptr()
+  
+0.00      0.28     0.00    37134     0.00     0.00  CreateBoard(Board&)
+  
+0.00      0.28     0.00    36946     0.00     0.00  std::back_insert_iterator<std::list<int, std::allocator<int> > > std::__copy_move<false, false, std::bidirectional_iterator_tag>::__copy_m<std::_List_iterator<int>, std::back_insert_iterator<std::list<int, std::allocator<int> > > >(std::_List_iterator<int>, std::_List_iterator<int>, std::back_insert_iterator<std::list<int, std::allocator<int> > >)
+  
+0.00      0.28     0.00    32974     0.00     0.00  std::__allocated_ptr<std::allocator<std::_List_node<int> > >::~__allocated_ptr()
+  
+0.00      0.28     0.00    32896     0.00     0.00  std::__allocated_ptr<std::allocator<std::_List_node<std::list<int, std::allocator<int> >*> > >::~__allocated_ptr()
+  
+0.00      0.28     0.00    32864     0.00     0.00  std::_List_base<Stone, std::allocator<Stone> >::_M_get_node()
+  
+0.00      0.28     0.00    32864     0.00     0.00  std::_List_base<Stone, std::allocator<Stone> >::_M_clear()
+  
+0.00      0.28     0.00    32864     0.00     0.00  std::list<std::list<Point, std::allocator<Point> >*, std::allocator<std::list<Point, std::allocator<Point> >*> >::begin()
+  
+0.00      0.28     0.00    32864     0.00     0.00  std::list<std::list<Point, std::allocator<Point> >*, std::allocator<std::list<Point, std::allocator<Point> >*> >::clear()
+  
+0.00      0.28     0.00    32864     0.00     0.00  void std::list<std::list<Point, std::allocator<Point> >*, std::allocator<std::list<Point, std::allocator<Point> >*> >::_M_insert<std::list<Point, std::allocator<Point> >* const&>(std::_List_iterator<std::list<Point, std::allocator<Point> >*>, std::list<Point, std::allocator<Point> >* const&)
+  
+0.00      0.28     0.00    32864     0.00     0.00  std::list<int, std::allocator<int> >::end()
+  
+0.00      0.28     0.00    27024     0.00     0.00  std::_List_iterator<Point>::_List_iterator()
+  
+0.00      0.28     0.00    26960     0.00     0.00  std::list<Stone, std::allocator<Stone> >::_M_move_assign(std::list<Stone, std::allocator<Stone> >&&, std::integral_constant<bool, true>)
+  
+0.00      0.28     0.00    26960     0.00     0.00  void std::__alloc_on_move<std::allocator<std::_List_node<Point> > >(std::allocator<std::_List_node<Point> >&, std::allocator<std::_List_node<Point> >&)
+  
+0.00      0.28     0.00    26811     0.00     0.00  std::_List_base<int, std::allocator<int> >::_M_init()
+  
+0.00      0.28     0.00    26811     0.00     0.00  std::_List_base<int, std::allocator<int> >::_List_base()
+  
+0.00      0.28     0.00    26811     0.00     0.00  std::_List_iterator<Point>::_List_iterator(std::__detail::_List_node_base*)
+  
+0.00      0.28     0.00    26811     0.00     0.00  std::list<int, std::allocator<int> >::back()
+  
+0.00      0.28     0.00    26811     0.00     0.00  std::iterator_traits<std::_List_const_iterator<std::list<Point, std::allocator<Point> >*> >::difference_type std::__distance<std::_List_const_iterator<std::list<Point, std::allocator<Point> >*> >(std::_List_const_iterator<std::list<Point, std::allocator<Point> >*>, std::_List_const_iterator<std::list<Point, std::allocator<Point> >*>, std::input_iterator_tag)
+  
+0.00      0.28     0.00    26811     0.00     0.00  std::list<int, std::allocator<int> >* std::__addressof<std::list<int, std::allocator<int> > >(std::list<int, std::allocator<int> >&)
+  
+0.00      0.28     0.00    26811     0.00     0.00  void std::__do_alloc_on_move<std::allocator<std::_List_node<Point> > >(std::allocator<std::_List_node<Point> >&, std::allocator<std::_List_node<Point> >&, std::integral_constant<bool, true>)
+  
+0.00      0.28     0.00    26811     0.00     0.00  std::operator!=(std::_List_iterator<std::list<int, std::allocator<int> >*> const&, std::_List_iterator<std::list<int, std::allocator<int> >*> const&)
+  
+0.00      0.28     0.00    26811     0.00     0.00  operator new(unsigned long, void*)
+  
+0.00      0.28     0.00    26779     0.00     0.00  std::list<Point, std::allocator<Point> >::back()
+  
+0.00      0.28     0.00    26779     0.00     0.00  std::list<Point, std::allocator<Point> >::begin()
+  
+0.00      0.28     0.00    26779     0.00     0.00  std::allocator<std::_List_node<std::list<int, std::allocator<int> >*> >* std::__addressof<std::allocator<std::_List_node<std::list<int, std::allocator<int> >*> > >(std::allocator<std::_List_node<std::list<int, std::allocator<int> >*> >&)
+  
+0.00      0.28     0.00    20907     0.00     0.00  std::_List_iterator<Stone>::_List_iterator()
+  
+0.00      0.28     0.00    20907     0.00     0.00  std::list<std::list<Point, std::allocator<Point> >*, std::allocator<std::list<Point, std::allocator<Point> >*> >::end()
+  
+0.00      0.28     0.00    20907     0.00     0.00  std::back_insert_iterator<std::list<int, std::allocator<int> > > std::back_inserter<std::list<int, std::allocator<int> > >(std::list<int, std::allocator<int> >&)
+  
+0.00      0.28     0.00    19547     0.00     0.00  std::__allocated_ptr<std::allocator<std::_List_node<std::list<Point, std::allocator<Point> >*> > >::__allocated_ptr(std::allocator<std::_List_node<std::list<Point, std::allocator<Point> >*> >&, std::_List_node<std::list<Point, std::allocator<Point> >*>*)
+  
+0.00      0.28     0.00    19166     0.00     0.00  CaptureStones(Stone&, Board&, int, int, int, bool)
+  
+0.00      0.28     0.00    18963     0.00     0.00  std::__allocated_ptr<std::allocator<std::_List_node<std::list<Point, std::allocator<Point> >*> > >::~__allocated_ptr()
+  
+0.00      0.28     0.00    18963     0.00     0.00  std::_List_node<Point>* std::list<Point, std::allocator<Point> >::_M_create_node<Point>(Point&&)
+  
+0.00      0.28     0.00    18963     0.00     0.00  std::list<Point, std::allocator<Point> >::_M_move_assign(std::list<Point, std::allocator<Point> >&&, std::integral_constant<bool, true>)
+  
+0.00      0.28     0.00    18963     0.00     0.00  std::list<Point, std::allocator<Point> >::clear()
+  
+0.00      0.28     0.00     8598     0.00     0.00  std::_List_node<std::list<int, std::allocator<int> >*>::_M_valptr()
+  
+0.00      0.28     0.00     6053     0.00     0.00  std::list<int, std::allocator<int> >::clear()
+  
+0.00      0.28     0.00     6053     0.00     0.00  int const& std::min<int>(int const&, int const&)
+  
+0.00      0.28     0.00     6053     0.00     0.00  std::operator!=(std::_List_const_iterator<Point> const&, std::_List_const_iterator<Point> const&)
+  
+0.00      0.28     0.00     5723     0.00     0.00  Copy(Board, Board&)
+  
+0.00      0.28     0.00     5368     0.00     0.00  void std::list<Point, std::allocator<Point> >::_M_insert<Point>(std::_List_iterator<Point>, Point&&)
+  
+0.00      0.28     0.00     4718     0.00     0.00  std::_List_node<std::list<Point, std::allocator<Point> >*>::_M_valptr()
+  
+0.00      0.28     0.00     3380     0.00     0.00  std::list<int, std::allocator<int> >::_M_erase(std::_List_iterator<int>)
+  
+0.00      0.28     0.00     2392     0.00     0.00  std::_List_base<std::list<int, std::allocator<int> >*, std::allocator<std::list<int, std::allocator<int> >*> >::_M_put_node(std::_List_node<std::list<int, std::allocator<int> >*>*)
+  
+0.00      0.28     0.00     2392     0.00     0.00  std::__detail::_List_node_header::_M_move_nodes(std::__detail::_List_node_header&&)
+  
+0.00      0.28     0.00     1786     0.00     0.00  std::_List_base<std::list<int, std::allocator<int> >*, std::allocator<std::list<int, std::allocator<int> >*> >::_M_get_node()
+  
+0.00      0.28     0.00     1780     0.00     0.00  std::_List_base<std::list<int, std::allocator<int> >*, std::allocator<std::list<int, std::allocator<int> >*> >::_M_clear()
+  
+0.00      0.28     0.00     1780     0.00     0.00  std::_List_base<std::list<int, std::allocator<int> >*, std::allocator<std::list<int, std::allocator<int> >*> >::_List_base()
+  
+0.00      0.28     0.00     1690     0.00     0.00  MakeMove(Stone&, Board&, int, int, bool, int&)
+  
+0.00      0.28     0.00     1690     0.00     0.00  std::_List_base<std::list<Point, std::allocator<Point> >*, std::allocator<std::list<Point, std::allocator<Point> >*> >::_List_impl::_List_impl()
+  
+0.00      0.28     0.00     1690     0.00     0.00  std::_List_base<std::list<Point, std::allocator<Point> >*, std::allocator<std::list<Point, std::allocator<Point> >*> >::_List_impl::~_List_impl()
+ 
+0.00      0.28     0.00     1690     0.00     0.00  std::_List_base<std::list<Point, std::allocator<Point> >*, std::allocator<std::list<Point, std::allocator<Point> >*> >::_M_put_node(std::_List_node<std::list<Point, std::allocator<Point> >*>*)
+  
+0.00      0.28     0.00     1690     0.00     0.00  void std::allocator_traits<std::allocator<std::_List_node<Stone> > >::construct<Stone, Stone const&>(std::allocator<std::_List_node<Stone> >&, Stone*, Stone const&)
+  
+0.00      0.28     0.00     1690     0.00     0.00  void std::allocator_traits<std::allocator<std::_List_node<std::list<Point, std::allocator<Point> >*> > >::destroy<std::list<Point, std::allocator<Point> >*>(std::allocator<std::_List_node<std::list<Point, std::allocator<Point> >*> >&, std::list<Point, std::allocator<Point> >**)
+  
+0.00      0.28     0.00     1690     0.00     0.00  std::list<int, std::allocator<int> >::pop_back()
+  
+0.00      0.28     0.00     1488     0.00     0.00  std::_List_iterator<Point>::operator++(int)
+  
+0.00      0.28     0.00     1488     0.00     0.00  std::_List_iterator<Point>::operator++()
+  
+0.00      0.28     0.00     1338     0.00     0.00  std::_List_iterator<Point>::operator--()
+  
+0.00      0.28     0.00     1196     0.00     0.00  std::_List_base<std::list<int, std::allocator<int> >*, std::allocator<std::list<int, std::allocator<int> >*> >::~_List_base()
+  
+0.00      0.28     0.00     1196     0.00     0.00  std::_List_base<int, std::allocator<int> >::_List_impl::_List_impl()
+  
+0.00      0.28     0.00     1196     0.00     0.00  std::_List_base<int, std::allocator<int> >::_M_get_node()
+  
+0.00      0.28     0.00     1196     0.00     0.00  void std::allocator_traits<std::allocator<std::_List_node<int> > >::destroy<int>(std::allocator<std::_List_node<int> >&, int*)
+  
+0.00      0.28     0.00     1196     0.00     0.00  std::allocator_traits<std::allocator<std::_List_node<int> > >::allocate(std::allocator<std::_List_node<int> >&, unsigned long)
+  
+0.00      0.28     0.00     1196     0.00     0.00  std::list<Point, std::allocator<Point> >::push_front(Point&&)
+  
+0.00      0.28     0.00     1196     0.00     0.00  std::list<Stone, std::allocator<Stone> >::list()
+  
+0.00      0.28     0.00     1196     0.00     0.00  std::_List_node<std::list<Point, std::allocator<Point> >*>* std::list<std::list<Point, std::allocator<Point> >*, std::allocator<std::list<Point, std::allocator<Point> >*> >::_M_create_node<std::list<Point, std::allocator<Point> >* const&>(std::list<Point, std::allocator<Point> >* const&)
+  
+0.00      0.28     0.00     1196     0.00     0.00  std::list<int, std::allocator<int> >::push_back(int const&)
+  
+0.00      0.28     0.00     1196     0.00     0.00  std::list<int, std::allocator<int> >::list()
+  
+0.00      0.28     0.00     1196     0.00     0.00  std::__detail::_List_node_header::_M_init()
+  
+0.00      0.28     0.00     1196     0.00     0.00  std::iterator_traits<std::_List_const_iterator<Point> >::difference_type std::__distance<std::_List_const_iterator<Point> >(std::_List_const_iterator<Point>, std::_List_const_iterator<Point>, std::input_iterator_tag)
+  
+0.00      0.28     0.00     1194     0.00     0.00  ClearPointerlist(std::list<std::list<Point, std::allocator<Point> >*, std::allocator<std::list<Point, std::allocator<Point> >*> >&)
+  
+0.00      0.28     0.00     1194     0.00     0.00  ClearPointerlist(std::list<std::list<int, std::allocator<int> >*, std::allocator<std::list<int, std::allocator<int> >*> >&)
+  
+0.00      0.28     0.00     1181     0.00     0.00  std::list<Stone, std::allocator<Stone> >::begin()
+  
+0.00      0.28     0.00     1168     0.00     0.00  std::__allocated_ptr<std::allocator<std::_List_node<Stone> > >::~__allocated_ptr()
+  
+0.00      0.28     0.00     1168     0.00     0.00  std::back_insert_iterator<std::list<Point, std::allocator<Point> > > std::__copy_move_a<false, std::_List_iterator<Point>, std::back_insert_iterator<std::list<Point, std::allocator<Point> > > >(std::_List_iterator<Point>, std::_List_iterator<Point>, std::back_insert_iterator<std::list<Point, std::allocator<Point> > >)
+  
+0.00      0.28     0.00      590     0.00     0.00  std::_List_base<std::list<int, std::allocator<int> >*, std::allocator<std::list<int, std::allocator<int> >*> >::_List_impl::~_List_impl()
+  
+0.00      0.28     0.00      590     0.00     0.00  std::__allocated_ptr<std::allocator<std::_List_node<Point> > >::~__allocated_ptr()
+  
+0.00      0.28     0.00      590     0.00     0.00  std::__allocated_ptr<std::allocator<std::_List_node<Point> > >::operator=(decltype(nullptr))
+  
+0.00      0.28     0.00      590     0.00     0.00  std::allocator_traits<std::allocator<std::_List_node<Stone> > >::deallocate(std::allocator<std::_List_node<Stone> >&, std::_List_node<Stone>*, unsigned long)
+  
+0.00      0.28     0.00      590     0.00     0.00  void std::allocator_traits<std::allocator<std::_List_node<Stone> > >::destroy<Stone>(std::allocator<std::_List_node<Stone> >&, Stone*)
+  
+0.00      0.28     0.00      590     0.00     0.00  std::allocator_traits<std::allocator<std::_List_node<std::list<Point, std::allocator<Point> >*> > >::allocate(std::allocator<std::_List_node<std::list<Point, std::allocator<Point> >*> >&, unsigned long)
+  
+0.00      0.28     0.00      584     0.00     0.00  std::_List_base<int, std::allocator<int> >::_M_put_node(std::_List_node<int>*)
+  
+0.00      0.28     0.00      584     0.00     0.00  std::_List_base<int, std::allocator<int> >::_M_get_Node_allocator()
+  
+0.00      0.28     0.00      584     0.00     0.00  std::_List_iterator<std::list<int, std::allocator<int> >*>::_List_iterator()
+  
+0.00      0.28     0.00      584     0.00     0.00  std::_List_iterator<int>::_List_iterator(std::__detail::_List_node_base*)
+  
+0.00      0.28     0.00      584     0.00     0.00  std::_List_iterator<int>::operator--()
+  
+0.00      0.28     0.00      584     0.00     0.00  std::__allocated_ptr<std::allocator<std::_List_node<Stone> > >::__allocated_ptr(std::allocator<std::_List_node<Stone> >&, std::_List_node<Stone>*)
+  
+0.00      0.28     0.00      584     0.00     0.00  std::allocator_traits<std::allocator<std::_List_node<std::list<int, std::allocator<int> >*> > >::allocate(std::allocator<std::_List_node<std::list<int, std::allocator<int> >*> >&, unsigned long)
+  
+0.00      0.28     0.00      584     0.00     0.00  void std::allocator_traits<std::allocator<std::_List_node<std::list<int, std::allocator<int> >*> > >::construct<std::list<int, std::allocator<int> >*, std::list<int, std::allocator<int> >* const&>(std::allocator<std::_List_node<std::list<int, std::allocator<int> >*> >&, std::list<int, std::allocator<int> >**, std::list<int, std::allocator<int> >* const&)
+  
+0.00      0.28     0.00      584     0.00     0.00  std::_List_const_iterator<Point>::_List_const_iterator(std::__detail::_List_node_base const*)
+  
+0.00      0.28     0.00      584     0.00     0.00  std::back_insert_iterator<std::list<Point, std::allocator<Point> > >::operator*()
+  
+0.00      0.28     0.00      584     0.00     0.00  std::back_insert_iterator<std::list<int, std::allocator<int> > >::back_insert_iterator(std::list<int, std::allocator<int> >&)
+  
+0.00      0.28     0.00      584     0.00     0.00  std::_List_node<Point>* std::list<Point, std::allocator<Point> >::_M_create_node<Point const&>(Point const&)
+  
+0.00      0.28     0.00      387     0.00     0.00  std::list<Stone, std::allocator<Stone> >::operator=(std::list<Stone, std::allocator<Stone> >&&)
+  
+0.00      0.28     0.00      295     0.00     0.01  GetFreeStones(int, Board)
+  
+0.00      0.28     0.00      295     0.00     0.00  std::_List_iterator<std::list<int, std::allocator<int> >*>::_List_iterator(std::__detail::_List_node_base*)
+  
+0.00      0.28     0.00      292     0.00     0.00  std::list<Stone, std::allocator<Stone> >::end()
+  
+0.00      0.28     0.00      292     0.00     0.00  void std::list<Stone, std::allocator<Stone> >::_M_insert<Stone const&>(std::_List_iterator<Stone>, Stone const&)
+  
+0.00      0.28     0.00       95     0.00     0.00  std::list<Stone, std::allocator<Stone> >::push_back(Stone const&)
+  
+0.00      0.28     0.00       64     0.00     0.00  std::list<Point, std::allocator<Point> >* const& std::forward<std::list<Point, std::allocator<Point> >* const&>(std::remove_reference<std::list<Point, std::allocator<Point> >* const&>::type&)
+  
+0.00      0.28     0.00       46     0.00     0.00  std::_List_iterator<std::list<Point, std::allocator<Point> >*>::operator++()
+  
+0.00      0.28     0.00       32     0.00     0.00  std::operator!=(std::_List_iterator<std::list<Point, std::allocator<Point> >*> const&, std::_List_iterator<std::list<Point, std::allocator<Point> >*> const&)
+  
+0.00      0.28     0.00       14     0.00     0.21  SelectMinmaxStone(Board, int, std::list<Point, std::allocator<Point> >&, int&, int, std::list<int, std::allocator<int> >&, int, int)
+  
+0.00      0.28     0.00       14     0.00     2.08  AIPlay(Board&, int)
+  
+0.00      0.28     0.00        1     0.00     0.00  main
+
+ 
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
